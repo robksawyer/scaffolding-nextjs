@@ -15,7 +15,7 @@ module.exports = {
       return pkgpath.self()
     }
     try {
-      return path.resolve(__dirname, '../../../')
+      return path.resolve(__dirname, '../../')
     } catch (err) {
       console.error('There was an error finding the package.json path.', err)
     }
