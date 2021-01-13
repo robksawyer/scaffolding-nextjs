@@ -1,6 +1,6 @@
 {
   "name": "scaffolding-nextjs",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "description": "Templates that aid in the development of NextJS applications.",
   "main": "index.js",
   "scripts": {
@@ -27,7 +27,7 @@
     "templates",
     "nextjs"
   ],
-  "author": "Rob Sawyer (rob@layerframe.com)",
+  "author": "Rob Sawyer (robksawyer@gmail.com)",
   "license": "MIT",
   "bin": {
     "foldit": "foldit.js"
