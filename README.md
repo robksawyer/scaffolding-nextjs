@@ -4,7 +4,7 @@
 
 # Getting started
 
-1. `yarn add robksawyer/scaffolding-nextjs`
+1. `yarn add scaffolding-nextjs`
 1. Update your `package.json` with the following. Point src to where files should be created. The script will reference your base directory automatically, though.
 
 ```json
