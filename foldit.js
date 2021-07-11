@@ -25,7 +25,7 @@ program
   .option('-d, --debug', 'output extra debugging')
   .option('-api, --api <name>', 'an API page component')
   .option('-app, --app <name>', 'an _app page component')
-  .option('-c, --component <name>', 'a stateless component')
+  .option('-c, --component <path> <name>', 'a stateless component')
   .option('-x, --context <name>', 'a context component')
   .option('-p, --page <name>', 'a page component')
   .option('-s, --story <name>', 'a Storybook component')
