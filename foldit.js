@@ -25,8 +25,8 @@ program
   .option('-d, --debug', 'output extra debugging')
   .option('-api, --api <name>', 'an API page component')
   .option('-app, --app <name>', 'an _app page component')
-  .option('-c, --component <name>', 'a stateless component')
   .option('-t, --path <name>', 'path for the item')
+  .option('-c, --component <name>', 'a stateless component')
   .option('-x, --context <name>', 'a context component')
   .option('-p, --page <name>', 'a page component')
   .option('-s, --story <name>', 'a Storybook component')
@@ -46,11 +46,10 @@ if (program.debug) console.log(program.opts())
  * @param {string} sep space separator in script name. Defaults to '-'
  */
 const runScript = function (name, options, ignoreName = false, sep = '-') {
-  console.log('options', options)
   let finalExec = `node ${path.resolve(
     __dirname,
     `${scriptPrefix}${sep}${name}`
-  )} --name ${options}`
+  )} --path ${options[0]} --name ${options[1]}`
   if (ignoreName) {
     finalExec = `node ${path.resolve(
       __dirname,
@@ -72,19 +71,19 @@ const runScript = function (name, options, ignoreName = false, sep = '-') {
 }
 
 // Build an API component
-if (program.api) runScript('api-component', program.api)
+if (program.api) runScript('api-component', [program.path, program.api])
 
 // Build an _app component
-if (program.api) runScript('app', program.app)
+if (program.api) runScript('app', [program.path, program.app])
 
 // Build a stateless component
-if (program.component) runScript('component', program.component)
+if (program.component) runScript('component', [program.path, program.component])
 
 // Build a context component
-if (program.context) runScript('context', program.context)
+if (program.context) runScript('context', [program.path, program.context])
 
 // Build a page component
-if (program.page) runScript('page-component', program.page)
+if (program.page) runScript('page-component', [program.path, program.page])
 
 // Build a story component
-if (program.story) runScript('stories', program.story)
+if (program.story) runScript('stories', [program.path, program.story])
