@@ -9,13 +9,19 @@ const scaffoldComponent = require('./scaffolding/scaffold-component')
 const constants = require('./constants')
 
 const PACKAGE_PATH = constants.getPackagePath()
-let SOURCE_DIR = constants.dirs().src + '/' + argv.path
+let SOURCE_DIR = constants.dirs().src
 
 module.exports = (function () {
   const argv = minimist(process.argv.slice(2))
   return scaffoldComponent({
     name: argv.name,
     src: path.resolve(__dirname, 'scaffolding/stateless-component'),
-    dest: path.resolve(PACKAGE_PATH, SOURCE_DIR, 'components', argv.name),
+    dest: path.resolve(
+      PACKAGE_PATH,
+      SOURCE_DIR,
+      argv.path,
+      'components',
+      argv.name
+    ),
   })
 })()
