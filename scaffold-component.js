@@ -13,13 +13,14 @@ let SOURCE_DIR = constants.dirs().src
 
 module.exports = (function () {
   const argv = minimist(process.argv.slice(2))
+  console.log('argv', argv)
   return scaffoldComponent({
     name: argv.name,
     src: path.resolve(__dirname, 'scaffolding/stateless-component'),
     dest: path.resolve(
       PACKAGE_PATH,
       SOURCE_DIR,
-      argv.path,
+      argv.path ? argv.path : '',
       'components',
       argv.name
     ),

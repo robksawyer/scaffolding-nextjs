@@ -42,9 +42,10 @@ if (program.debug) console.log(program.opts())
  * runScript
  * @param {string} name name of the script (minus the separator and the name)
  * @param {string} options options to pass to the script
- *  * @param {string} sep space separator in script name. Defaults to '-'
+ * @param {string} sep space separator in script name. Defaults to '-'
  */
 const runScript = function (name, options, ignoreName = false, sep = '-') {
+  console.log('options', options)
   let finalExec = `node ${path.resolve(
     __dirname,
     `${scriptPrefix}${sep}${name}`
