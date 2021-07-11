@@ -26,7 +26,7 @@ program
   .option('-api, --api <name>', 'an API page component')
   .option('-app, --app <name>', 'an _app page component')
   .option('-c, --component <name>', 'a stateless component')
-  .option('-path, <name>', 'path for the item')
+  .option('-t, --path <name>', 'path for the item')
   .option('-x, --context <name>', 'a context component')
   .option('-p, --page <name>', 'a page component')
   .option('-s, --story <name>', 'a Storybook component')
