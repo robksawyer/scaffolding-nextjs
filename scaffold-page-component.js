@@ -14,7 +14,6 @@ const SOURCE_DIR = constants.dirs().src
 const createClassName = (name) => {
   // Force uppercase to build the className
   const cleanName = `${name[0].toUpperCase()}${name.slice(1, name.length)}`
-  console.log(cleanName)
   // transforms PascalCase into slug-case for the CSS class name
   return cleanName
     .replace(/[A-Z]/g, (word) => '-' + word.toLowerCase())
