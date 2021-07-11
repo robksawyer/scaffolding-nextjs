@@ -6,13 +6,12 @@ import PropTypes from 'prop-types'
 
 import styles from './{{name}}.module.css'
 
-const {{name}} = (props) => {
-  const {
-    tagName: Tag = 'div',
-    className = '',
-    variant = 'default',
-    children = '',
-  } = props
+const {{name}} = ({
+  tagName: Tag = 'div',
+  className = '',
+  variant = 'default',
+  children = '',
+}) => {
 
   return (
     <Tag
