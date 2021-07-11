@@ -1,6 +1,6 @@
 {
   "name": "scaffolding-nextjs",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "description": "Templates that aid in the development of NextJS applications.",
   "main": "index.js",
   "scripts": {
