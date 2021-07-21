@@ -14,6 +14,6 @@
  // Component to test
  import {{name}} from './{{name}}.jsx'
 
- test('is truthy', function () {
+ test('is truthy', () => {
    expect(true).toBeTruthy();
  })
