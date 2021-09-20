@@ -1,5 +1,5 @@
 {
-  "name": "@layerframers/scaffolding-nextjs",
+  "name": "scaffolding-nextjs",
   "version": "1.1.6",
   "description": "Templates that aid in the development of NextJS applications.",
   "main": "index.js",
@@ -27,15 +27,15 @@
     "templates",
     "nextjs"
   ],
-  "author": "Rob Sawyer (rob@layerframe.com)",
+  "author": "Rob Sawyer (robksawyer@gmail.com)",
   "license": "MIT",
   "bin": {
     "foldit": "./foldit.js"
   },
   "bugs": {
-    "url": "https://github.com/layerframe/scaffolding-nextjs/issues"
+    "url": "https://github.com/robksawyer/scaffolding-nextjs/issues"
   },
-  "homepage": "https://github.com/layerframe/scaffolding-nextjs#readme",
+  "homepage": "https://github.com/robksawyer/scaffolding-nextjs#readme",
   "dependencies": {
     "@babel/cli": "^7.7.7",
     "@babel/core": "^7.7.5",
